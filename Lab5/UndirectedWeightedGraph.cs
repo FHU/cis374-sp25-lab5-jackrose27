@@ -93,7 +93,7 @@ public class UndirectedWeightedGraph
         node2.Neighbors.Add(new Neighbor() { Node = node1, Weight = weight });
     }
 
-    private Node GetNodeByName(string nodeName)
+    public Node GetNodeByName(string nodeName)
     {
         var node = Nodes.Find(node => node.Name == nodeName);
 
