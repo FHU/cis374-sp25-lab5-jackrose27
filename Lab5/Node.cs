@@ -7,12 +7,12 @@ public enum Color
 
 public class Neighbor : IComparable<Neighbor>
 {
-	public Node Node { get; set; }
-	public int Weight { get; set; }
+    public Node Node { get; set; }
+    public int Weight { get; set; }
 
     public int CompareTo(Neighbor? other)
     {
-        return this.CompareTo(other);
+        return this.Node.CompareTo(other.Node);
     }
 }
 

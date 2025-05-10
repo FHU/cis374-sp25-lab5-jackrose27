@@ -8,7 +8,7 @@ public class UnitTests
     [TestMethod]
     public void Graph1IsReachable()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph1.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph1.txt");
 
         Assert.IsTrue(undirectedGraph.IsReachable("a", "c"));
         Assert.IsTrue(undirectedGraph.IsReachable("e", "c"));
@@ -19,7 +19,7 @@ public class UnitTests
     [TestMethod]
     public void Graph1ConnectedComponents()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph1.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph1.txt");
 
         Assert.AreEqual(1, undirectedGraph.ConnectedComponents);
     }
@@ -28,7 +28,7 @@ public class UnitTests
     [TestMethod]
     public void Graph2IsReachable()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph2.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph2.txt");
 
         Assert.IsFalse(undirectedGraph.IsReachable("a", "c"));
         Assert.IsFalse(undirectedGraph.IsReachable("e", "c"));
@@ -41,7 +41,7 @@ public class UnitTests
     [TestMethod]
     public void Graph2ConnectedComponents()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph2.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph2.txt");
 
         Assert.AreEqual(5, undirectedGraph.ConnectedComponents);
     }
@@ -50,7 +50,7 @@ public class UnitTests
     [TestMethod]
     public void Graph3IsReachable()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph3.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph3.txt");
 
         Assert.IsTrue(undirectedGraph.IsReachable("a", "c"));
         Assert.IsTrue(undirectedGraph.IsReachable("e", "d"));
@@ -65,7 +65,7 @@ public class UnitTests
     [TestMethod]
     public void Graph3ConnectedComponents()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph3.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph3.txt");
 
         Assert.AreEqual(3, undirectedGraph.ConnectedComponents);
     }
@@ -73,7 +73,7 @@ public class UnitTests
     [TestMethod]
     public void Graph4IsReachable()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph4.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph4.txt");
 
         Assert.IsTrue(undirectedGraph.IsReachable("a", "c"));
         Assert.IsTrue(undirectedGraph.IsReachable("e", "i"));
@@ -87,7 +87,7 @@ public class UnitTests
     [TestMethod]
     public void Graph4ConnectedComponents()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/graph4.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/graph4.txt");
 
         Assert.AreEqual(1, undirectedGraph.ConnectedComponents);
     }
@@ -95,7 +95,7 @@ public class UnitTests
     [TestMethod]
     public void SavannahIsReachable()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/Savannah.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/Savannah.txt");
 
         Assert.IsTrue(undirectedGraph.IsReachable("a", "c"));
         Assert.IsTrue(undirectedGraph.IsReachable("e", "i"));
@@ -113,7 +113,7 @@ public class UnitTests
     [TestMethod]
     public void SavannahConnectedComponents()
     {
-        UndirectedUnweightedGraph undirectedGraph = new UndirectedUnweightedGraph("../../../graphs/Savannah.txt");
+        UndirectedWeightedGraph undirectedGraph = new UndirectedWeightedGraph("../../../graphs/Savannah.txt");
 
         Assert.AreEqual(2, undirectedGraph.ConnectedComponents);
     }
