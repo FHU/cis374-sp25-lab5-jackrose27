@@ -1,15 +1,15 @@
 ﻿# names of the nodes
 a  b  c  d e f g h i
 
-# edges
-a b
-b c
+# edges and weights
+a b 2
+b c 5
 
-b e
-b d
+b e 3
+b d 1
 
-h i
-g i
+h i 5
+g i 6
 
 
 # 3 connected components
